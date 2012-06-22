@@ -40,6 +40,15 @@ boxMaker.makeBoxes = function() {
 
 /* Prepend or Append Boxes
  * ======================================================= */
+ 
+ /*
+ *  Add these buttons to the html for these functions.
+	  <p>
+	    <button id="prepend">Prepend new items</button>
+	    <button id="append">Append new items</button>
+	  </p>	
+*/
+ 
 window.onload = function() {
   var container = document.getElementById('content');
   var wall = new Masonry( container, {

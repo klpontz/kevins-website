@@ -7,16 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
+    <!-- Styles -->
     <link href="css/bootstrap.css" rel="stylesheet">	
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
+    <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
@@ -27,15 +27,10 @@
   <body>
 	  
     <div id="container">
-<!--	
-	  <p>
-	    <button id="prepend">Prepend new items</button>
-	    <button id="append">Append new items</button>
-	  </p>	
--->		
-	  <div id="content">
+ 
+ 	  <div id="content">
 		  
-		  <div id="one" class="brick bigBox blue">1</div>
+		  <div id = "one" class="brick bigBox blue">1</div>
 		  <div id = "three" class="brick vertRect black">2</div>
 		  <div id = "four" class="brick box white">3</div>
  		  <div id = "five" class="brick box skyBlue">4</div>
@@ -43,9 +38,8 @@
 		  <div id = "seven" class="brick horiRect gray">6</div>
 		  <div id = "nine" class="brick bigBox blue">7</div>
 		  <div id = "fourt" class="brick horiRect gray">8</div>
-
-		  <div id = "sevent" class="brick box black">10</div>
-		  <div id = "eightt" class="brick box white">11</div>
+		  <div id = "sevent" class="brick box black">9</div>
+		  <div id = "eightt" class="brick box white">10</div>
 		  		  
 	  </div><!-- content -->
 	  
@@ -59,20 +53,10 @@
     ================================================== -->
 
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
     <script src="js/masonry.js"></script>
     <script src="js/box-maker.js"></script>
+
 	
   <script>
   window.onload = function() {
@@ -81,6 +65,17 @@
     });
   };
   </script>
-  
+ <!--
+  <script type="text/javascript">
+  	$(document).ready(function(){							
+	
+  		$(".brick").click(function(){
+  			$(this).animate({width: "50%", height: "100%"},1500);
+  		});
+		
+
+  	});
+  </script>
+-->  
   </body>
 </html>
