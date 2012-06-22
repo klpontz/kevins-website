@@ -82,40 +82,5 @@
   };
   </script>
   
-	<script>
-	  window.onload = function() {
-	    var container = document.getElementById('content');
-	    var wall = new Masonry( container, {
-	      columnWidth: 94
-	    });
-    
-	    document.getElementById('prepend').onclick = function() {
-	      // get an array of elements
-	      var boxes = boxMaker.makeBoxes();
-
-	      // prepend box to container
-	      for (var i=0, len = boxes.length; i < len; i++) {
-	        container.insertBefore( boxes[i], container.firstChild )
-	      }
-      
-	      wall.reload();
-	    };
-
-
-	    document.getElementById('append').onclick = function() {
-	      // get an array of elements
-	      var boxes = boxMaker.makeBoxes();
-
-	      for (var i=0, len = boxes.length; i < len; i++) {
-	        container.appendChild( boxes[i] );
-	      }
-      
-	      wall.appended( boxes );
-	    };
-	  };
-	</script>
-
-  	
-
   </body>
 </html>
