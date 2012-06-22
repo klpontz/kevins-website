@@ -27,53 +27,55 @@
   <body>
 	  
     <div class="container">
+		
 	  <div id="content">
-		  <div id="one" class="box blue"></div>
-		  <div id = "two" class="box blue"></div>
-		  <div id = "three" class="box black"></div>
-		  <div id = "four" class="box white"></div>
- 		  <div id = "five" class="box skyBlue"></div>
-		  <div id = "six" class="box black"></div>	  
-		  <div id = "seven" class="box gray"></div>
-		  <div id = "eight" class="box gray"></div>
-		  <div id = "nine" class="box blue"></div>
-		  <div id = "ten" class=" box blue"></div>
-
-		  <div id = "eleven" class="box blue"></div>	  
-		  <div id = "twelve" class="box blue"></div>
-		  <div id = "thirt" class="box black"></div>
-		  <div id = "fourt" class="box gray"></div>
-		  <div id = "fift" class="box gray"></div>	  
-		  <div id = "sixt" class="box black"></div>
-		  <div id = "sevent" class="box black"></div>
-		  <div id = "eightt" class="box white"></div>
-		  <div id = "ninet" class="box blue"></div>
-		  <div id = "twenty" class="box blue"></div>
+		  
+		  <div id="one" class="brick bigBox blue"></div>
+		  <div id = "three" class="brick vertRect black"></div>
+		  <div id = "four" class="brick box white"></div>
+ 		  <div id = "five" class="brick box skyBlue"></div>
+		  <div id = "six" class="brick box black"></div>	  
+		  <div id = "seven" class="brick horiRect gray"></div>
+		  <div id = "nine" class="brick bigBox blue"></div>
+		  <div id = "fourt" class="brick horiRect gray"></div>
+		  <div id = "sixt" class="brick box black"></div>
+		  <div id = "sevent" class="brick box black"></div>
+		  <div id = "eightt" class="brick box white"></div>
 		  		  
 	  </div><!-- content -->
 	  
       <footer>
         <p>&copy; Kevin Rocci 2012</p>
       </footer>
-
+	  
     </div> <!-- /container -->
 
     <!-- Javascript
     ================================================== -->
 
-    <script src="js//jquery.js"></script>
-    <script src="js//bootstrap-transition.js"></script>
-    <script src="js//bootstrap-alert.js"></script>
-    <script src="js//bootstrap-modal.js"></script>
-    <script src="js//bootstrap-dropdown.js"></script>
-    <script src="js//bootstrap-scrollspy.js"></script>
-    <script src="js//bootstrap-tab.js"></script>
-    <script src="js//bootstrap-tooltip.js"></script>
-    <script src="js//bootstrap-popover.js"></script>
-    <script src="js//bootstrap-button.js"></script>
-    <script src="js//bootstrap-collapse.js"></script>
-    <script src="js//bootstrap-carousel.js"></script>
-    <script src="js//bootstrap-typeahead.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/masonry.js"></script>
+	
+  <script>
+  window.onload = function() {
+    var wall = new Masonry( document.getElementById('content'), {
+      columnWidth: 94
+    });
+  };
+  </script>
+	
 
   </body>
 </html>

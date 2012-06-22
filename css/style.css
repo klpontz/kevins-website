@@ -30,7 +30,7 @@ body {
 }
 
 .gray {
-  background-color: #1e2322;
+  background-color: #373E3D;
 }
 
 .black {
@@ -39,26 +39,26 @@ body {
 
 /* BOXES
 ##################################### */
+.brick {
+  float:left;
+}
+
 .box {
-  float: left;
   width: 94px;	
   height: 94px;
 }
 
 .horiRect {
-  float: left;
   width: 188px;	
   height: 94px;
 }
 
 .vertRect {
-  float: left;
   width: 94px;	
   height: 188px;
 }
 
 .bigBox {
-  float: left;
   width: 188px;	
   height: 188px;
 
