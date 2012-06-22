@@ -1,0 +1,178 @@
+body {
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+#container {
+}
+
+#content {
+  width: 940px;
+  height: 658px;
+}
+	
+/* COLORS
+##################################### */
+.white {
+  background-color: #cde8ff;
+}
+
+.skyBlue {
+  background-color: #64b5ff;
+}
+
+.blue {
+  background-color: #1671d4;
+  -webkit-box-shadow: inset 0 1px 1px rgba(205, 232, 255, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(205, 232, 255, 0.05);
+  box-shadow: inset 0 1px 1px rgba(205, 232, 255, 0.05);
+}
+
+.gray {
+  background-color: #1e2322;
+}
+
+.black {
+  background-color: #0d0d0d;
+}
+
+/* BOXES
+##################################### */
+.box {
+  float: left;
+  width: 94px;	
+  height: 94px;
+}
+
+.horiRect {
+  float: left;
+  width: 188px;	
+  height: 94px;
+}
+
+.vertRect {
+  float: left;
+  width: 94px;	
+  height: 188px;
+}
+
+.bigBox {
+  float: left;
+  width: 188px;	
+  height: 188px;
+
+}
+
+#two {
+
+}
+
+#three {
+}
+
+#four { 
+
+}
+
+#five {
+}
+
+#six {
+
+}
+
+#seven {
+
+}
+
+#eight {
+
+}
+
+#nine {
+}
+
+#ten {
+
+}
+
+#eleven {
+}
+
+#twelve {
+
+}
+
+#thirt {
+
+}
+
+#fourt {
+
+}
+
+#fift {
+}
+
+#sixt {
+}
+
+#sevent {
+}
+
+#eightt {
+}
+
+#ninet {
+}
+
+#twenty {
+}
+
+#twentyOne {
+}
+
+#twentyTwo {
+}
+
+#twentyThree {
+}
+
+#twentyFour {
+}
+
+#twentyFive {
+}
+
+#twentySix {
+}
+
+#twentySeven {
+}
+
+#twentyEight {
+}
+
+#twentyNine {
+}
+
+#thirty {
+}
+
+#thirtyOne {
+}
+
+#thirtyTwo {
+}
+
+#thirtyThree {
+}
+
+#thirtyFour {
+}
+
+#thirtyFive {
+}
+
