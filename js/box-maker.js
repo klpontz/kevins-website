@@ -8,17 +8,17 @@
 var boxMaker = {};
 
 var colors = new Array();
-colors[0] = 'lightest';
-colors[1] = 'lighter';
-colors[2] = 'light';
-colors[3] = 'dark';
-colors[4] = 'darker';
+  colors[0] = 'lightest';
+  colors[1] = 'lighter';
+  colors[2] = 'light';
+  colors[3] = 'dark';
+  colors[4] = 'darker';
 
 var boxType = new Array();
-boxType[0] = 'box';
-boxType[1] = 'horiRect';
-boxType[2] = 'vertRect';
-boxType[3] = 'bigBox';
+  boxType[0] = 'box';
+  boxType[1] = 'horiRect';
+  boxType[2] = 'vertRect';
+  boxType[3] = 'bigBox';
 
 boxMaker.makeBoxes = function() {
   var boxes = [],
@@ -58,18 +58,6 @@ window.onload = function() {
   var wall = new Masonry( container, {
     columnWidth: 94
   });
-    
-  document.getElementById('prepend').onclick = function() {
-    // get an array of elements
-    var boxes = boxMaker.makeBoxes();
-
-    // prepend box to container
-    for (var i=0, len = boxes.length; i < len; i++) {
-      container.insertBefore( boxes[i], container.firstChild )
-    }
-      
-    wall.reload();
-  };
 
   document.getElementById('append').onclick = function() {
     // get an array of elements

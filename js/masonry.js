@@ -494,3 +494,11 @@
   window.Masonry = Masonry;
 
 })( window );
+
+
+// Initializes function
+window.onload = function() {
+  var wall = new Masonry( document.getElementById('content'), {
+    columnWidth: 94
+  });
+};
