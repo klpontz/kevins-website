@@ -1,14 +1,11 @@
 body {
+  margin-top: 75px;
   background-color:#262626;
 }
 
-#container {
-  width: 100%;
-}
-
 #content {
-  width: 80%;
-  margin: 0px auto;
+  width: 85%;
+  margin: 0px auto;  
 }
 	
 /* COLORS
@@ -65,118 +62,6 @@ body {
 }
 
 .contentBox {
-  width:374px;
-  height:270px;
+  width:469px;
+  height:304px;
 }
-
-#two {
-
-}
-
-#three {
-}
-
-#four { 
-
-}
-
-#five {
-}
-
-#six {
-
-}
-
-#seven {
-
-}
-
-#eight {
-
-}
-
-#nine {
-}
-
-#ten {
-
-}
-
-#eleven {
-}
-
-#twelve {
-
-}
-
-#thirt {
-
-}
-
-#fourt {
-
-}
-
-#fift {
-}
-
-#sixt {
-}
-
-#sevent {
-}
-
-#eightt {
-}
-
-#ninet {
-}
-
-#twenty {
-}
-
-#twentyOne {
-}
-
-#twentyTwo {
-}
-
-#twentyThree {
-}
-
-#twentyFour {
-}
-
-#twentyFive {
-}
-
-#twentySix {
-}
-
-#twentySeven {
-}
-
-#twentyEight {
-}
-
-#twentyNine {
-}
-
-#thirty {
-}
-
-#thirtyOne {
-}
-
-#thirtyTwo {
-}
-
-#thirtyThree {
-}
-
-#thirtyFour {
-}
-
-#thirtyFive {
-}
-
