@@ -1,24 +1,26 @@
  /* MAKE BOXES
   * ======================================================= */
- // This is a utitlity script to add
- // random content to masonry-ed layouts.
- // Built off code from David DeSandro
+ // This is a utitlity script to add random content 
+ // to masonry-ed layouts. Boxes will be made and added 
+ // when the user scrolls down.
+ //
+ // Built off of code from David DeSandro
  // http://vanilla-masonry.desandro.com/ 
 
 var boxMaker = {};
 
-var colors = new Array();
-  colors[0] = 'lightest';
-  colors[1] = 'lighter';
-  colors[2] = 'light';
-  colors[3] = 'dark';
-  colors[4] = 'darker';
+var colors = new Array(
+	'lightest',
+	'lighter',
+	'light',
+	'dark',
+	'darker');
 
-var boxType = new Array();
-  boxType[0] = 'box';
-  boxType[1] = 'horiRect';
-  boxType[2] = 'vertRect';
-  boxType[3] = 'bigBox';
+var boxType = new Array(
+	'box',
+	'horiRect',
+	'vertRect',
+	'bigBox');
 
 boxMaker.makeBoxes = function() {
   var boxes = [],
@@ -59,7 +61,7 @@ window.onload = function() {
     columnWidth: 94
   });
 
-  document.getElementById('append').onclick = function() {
+  document.onscroll = function() {
     // get an array of elements
     var boxes = boxMaker.makeBoxes();
 
