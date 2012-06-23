@@ -10,23 +10,23 @@ body {
 	
 /* COLORS
 ##################################### */
-.white {
+.lightest {
   background-color: #A8BFBF;
 }
 
-.skyBlue {
+.lighter {
   background-color: #707F7F;
 }
 
-.blue {
+.light {
   background-color: #446D85;
 }
 
-.gray {
+.dark {
   background-color: #2C5A7D;
 }
 
-.black {
+.darker {
   background-color: #083868;
 }
 
@@ -62,6 +62,10 @@ body {
 }
 
 .contentBox {
-  width:469px;
+  width:468px;
   height:304px;
+}
+
+#append {
+	position:fixed;
 }
