@@ -17,8 +17,6 @@ var colors = new Array(
 	'darker');
 
 var boxType = new Array(
-	'mini',
-	'smallBox',
 	'box',
 	'horiRect',
 	'vertRect',
@@ -63,14 +61,13 @@ window.onload = function() {
     columnWidth: 94
   });
 
-  document.onscroll = function() {
+  $(window).scroll(function() {
+	  console.log("asd")
     // get an array of elements
-    var boxes = boxMaker.makeBoxes();
-	  
-	  for (var i=0, len = boxes.length; i < len; i++) {
-      container.appendChild( boxes[i] );
-    }
-      
+    var boxes = boxMaker.makeBoxes();  
+	for (var i=0, len = boxes.length; i < len; i++) {
+    container.appendChild( boxes[i] );
+    }   
     wall.appended( boxes );
-  };
+  });
 };

@@ -1,6 +1,9 @@
 body {
   margin-top: 75px;
+  margin-bottom: 75px;
   background-color:#262626;
+  width: 100%;
+  height: 100%;
 }
 
 #content {
@@ -11,23 +14,23 @@ body {
 /* COLORS
 ##################################### */
 .lightest {
-  background-color: #A8BFBF;
+  background-color: #EFEFEF;
 }
 
 .lighter {
-  background-color: #707F7F;
+  background-color: #FF530D;
 }
 
 .light {
-  background-color: #446D85;
+  background-color: #BDD4DE;
 }
 
 .dark {
-  background-color: #2C5A7D;
+  background-color: #3F5765;
 }
 
 .darker {
-  background-color: #083868;
+  background-color: #2B3A42;
 }
 
 /* BOXES
