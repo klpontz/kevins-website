@@ -1,3 +1,10 @@
+/* ANIMATION SCROLL TO TOP
+ * ===========================================
+ * Sweet little jQuery to scroll back
+ * to the top of the page.
+ * http://www.jqueryrain.com/?4IUuCqNF
+*/
+
 $(document).ready(function(){							
   	// hide #back-top first
   	$("#back-top").hide();
@@ -21,3 +28,11 @@ $(document).ready(function(){
   		});
   	});
 });
+
+/* Insert into HTML
+ * ===========================================
+  $(document).on("scrollstop",function() {
+     alert("Scroll Stopped");
+  }); 
+  
+*/
