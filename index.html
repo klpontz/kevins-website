@@ -25,8 +25,7 @@
   </head>
 
   <body>
-
- 	  <div id="content"></div>
+    <div id="content"></div>
 	  
       <footer>
         <p>&copy; Kevin Rocci 2012</p>
@@ -36,21 +35,68 @@
     ================================================== -->
 
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.livequery.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/masonry.js"></script>
 	<script src="js/bricks.js"></script>
 	<script src="js/box-maker.js"></script>
 
+	<script>
+	    $(document).ready(function(){							
+	      $(".contentBox").livequery('click', function() {
+	        $(this)
+	          .animate({"height" : "50%"}, 500)
+	          .animate({"width" : "90%"}, 500);
+	      });
+	    });
+	 </script>
+
   <script>
     $(document).ready(function(){							
-      $("contentBox").click(function() {
-        $(this).css({"z-index" : "1"})
-          .animate({"height" : "100%"}, 500)
-          .animate({"width" : "100%"}, 500);
-      });
+		var newHeight = $('body').outerHeight() + 1000;
+		$("body").css("height",newHeight);
     });
+  </script>  
+
+  <script>  
+    $(document).ready(function(){
+	  $(".brick").livequery('click', function () {
+	    $(this).effect("highlight", {color:"#ffffff"}, 4000);
+	  });
+    });	  
+  </script>  
+  
+  <script>
+  $(document).ready(function(){
+
+  	// hide #back-top first
+  	$("#back-top").hide();
+	
+  	// fade in #back-top
+  	$(function () {
+  		$(window).scroll(function () {
+  			if ($(this).scrollTop() > 100) {
+  				$('#back-top').fadeIn();
+  			} else {
+  				$('#back-top').fadeOut();
+  			}
+  		});
+
+  		// scroll body to 0px on click
+  		$('#back-top a').click(function () {
+  			$('body,html').animate({
+  				scrollTop: 0
+  			}, 800);
+  			return false;
+  		});
+  	});
+
+  });
   </script>
   
+  
+  
+   <p id="back-top"><a href="#top"><span></span>Top</a></p>
   </body>
 </html>
