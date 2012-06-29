@@ -11,9 +11,9 @@ body {
 }
 
 #scrollOn {
-	background-image: url(../img/extender.gif) repeat-y;
-	display:hidden;
-	height:100%;
+  background-image: url(../img/extender.gif) repeat-y;
+  display:hidden;
+  height:100%;
 }
 
 #content {
@@ -22,9 +22,10 @@ body {
 }
 
 footer {
-  position:absolute;
-  margin-bottom: 1%;
-  margin-top: 1%;
+  bottom:0%;
+  position:fixed;
+  width:100%;
+  background: #3F5765;
 }
 	
 /* COLORS
@@ -96,7 +97,7 @@ footer {
 }
 
 #append {
-	position:fixed;
+  position:fixed;
 }
 
 /* BACK-TO-THE-TOP BUTTON
