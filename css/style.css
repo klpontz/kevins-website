@@ -82,3 +82,34 @@ body {
 #append {
 	position:fixed;
 }
+
+/* BACK-TO-THE-TOP BUTTON
+##################################### */
+#back-top {
+	position: fixed;
+	bottom: 30px;
+}
+#back-top a {
+	display: block;
+	text-align: center;
+	font: 11px/100%;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #262626;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #BDD4DE;
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 45px;
+	height: 45px;
+	display: block;
+	margin-bottom: 7px;
+	background: url(../img/arrow-up.png) no-repeat center center;
+}
+#back-top a:hover span {
