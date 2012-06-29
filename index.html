@@ -26,7 +26,8 @@
 
   <body>
     <div id="content"></div>
-	  
+    <div id="back-top"><a href="#top"><span></span>Top</a></div>
+  
       <footer>
         <p>&copy; Kevin Rocci 2012</p>
       </footer>
@@ -39,7 +40,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/masonry.js"></script>
-	<script src="js/bricks.js"></script>
+	<script src="js/jquery.scrollTop.js"></script>
 	<script src="js/box-maker.js"></script>
 
 	<script>
@@ -53,10 +54,11 @@
 	 </script>
 
   <script>
-    $(document).ready(function(){							
-		var newHeight = $('body').outerHeight() + 1000;
-		$("body").css("height",newHeight);
-    });
+    $(document).ready(function(){
+	  var newHeight = $('body').outerHeight() + 1000;
+	  $("#scrollOn").css("height",newHeight);
+	});	
+	
   </script>  
 
   <script>  
@@ -66,37 +68,6 @@
 	  });
     });	  
   </script>  
-  
-  <script>
-  $(document).ready(function(){
-
-  	// hide #back-top first
-  	$("#back-top").hide();
-	
-  	// fade in #back-top
-  	$(function () {
-  		$(window).scroll(function () {
-  			if ($(this).scrollTop() > 100) {
-  				$('#back-top').fadeIn();
-  			} else {
-  				$('#back-top').fadeOut();
-  			}
-  		});
-
-  		// scroll body to 0px on click
-  		$('#back-top a').click(function () {
-  			$('body,html').animate({
-  				scrollTop: 0
-  			}, 800);
-  			return false;
-  		});
-  	});
-
-  });
-  </script>
-  
-  
-  
-   <p id="back-top"><a href="#top"><span></span>Top</a></p>
+  <div id="scrollOn"></div>  
   </body>
 </html>

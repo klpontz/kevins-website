@@ -26,7 +26,7 @@ var boxCount = 0;
 
 boxMaker.makeBoxes = function() {
   var boxes = [],
-      count = Math.random() * 4;
+      count = Math.random() * 7;
 	  
   for (var i=0; i < count; i++ ) {
 	boxCount++;
@@ -62,7 +62,6 @@ window.onload = function() {
   });
 
   $(window).scroll(function() {
-	  console.log("asd")
     // get an array of elements
     var boxes = boxMaker.makeBoxes();  
 	for (var i=0, len = boxes.length; i < len; i++) {

@@ -1,3 +1,7 @@
+html {
+
+}
+
 body {
   margin-top: 75px;
   margin-bottom: 75px;
@@ -6,9 +10,21 @@ body {
   height: 100%;
 }
 
+#scrollOn {
+	background-image: url(../img/extender.gif) repeat-y;
+	display:hidden;
+	height:100%;
+}
+
 #content {
   width: 85%;
   margin: 0px auto;  
+}
+
+footer {
+  position:absolute;
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
 	
 /* COLORS
@@ -86,30 +102,31 @@ body {
 /* BACK-TO-THE-TOP BUTTON
 ##################################### */
 #back-top {
-	position: fixed;
-	bottom: 30px;
+  position: fixed;
+  bottom: 30px;
+  margin-left: .5%;
 }
 #back-top a {
-	display: block;
-	text-align: center;
-	font: 11px/100%;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #262626;
-	/* background color transition */
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	transition: 1s;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #262626;
+  /* background color transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
 }
 #back-top a:hover {
-	color: #BDD4DE;
+  color: #BDD4DE;
 }
 /* arrow icon (span tag) */
 #back-top span {
-	width: 45px;
-	height: 45px;
-	display: block;
-	margin-bottom: 7px;
-	background: url(../img/arrow-up.png) no-repeat center center;
+  width: 32px;
+  height: 32px;
+  display: block;
+  background: url(../img/arrow-up.png) no-repeat center center;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
 }
-#back-top a:hover span {
