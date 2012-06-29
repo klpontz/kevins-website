@@ -29,7 +29,7 @@ footer {
 }
 	
 /* COLORS
-##################################### */
+=================================================== */
 .lightest {
   background-color: #EFEFEF;
 }
@@ -51,7 +51,7 @@ footer {
 }
 
 /* BOXES
-##################################### */
+=================================================== */
 .brick {
   float:left;
   border: 1px solid #eee;
@@ -100,8 +100,34 @@ footer {
   position:fixed;
 }
 
+/* MASONRY TRANSITIONS
+=================================================== */
+.masonry,
+.masonry .masonry-brick {
+  -webkit-transition-duration: 0.9s;
+     -moz-transition-duration: 0.9s;
+      -ms-transition-duration: 0.9s;
+       -o-transition-duration: 0.9s;
+          transition-duration: 0.9s;
+}
+
+.masonry {
+  -webkit-transition-property: width, height;
+     -moz-transition-property: width, height;
+      -ms-transition-property: width, height;
+       -o-transition-property: width, height;
+          transition-property: width, height;
+}
+.masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
 /* BACK-TO-THE-TOP BUTTON
-##################################### */
+=================================================== */
 #back-top {
   position: fixed;
   bottom: 30px;
