@@ -61,7 +61,7 @@ window.onload = function() {
     columnWidth: 94
   });
 
-  $(window).scroll(function() {
+  $(window).on("scrollstop",function() {
 	// get an array of elements
     var boxes = boxMaker.makeBoxes();  
 
