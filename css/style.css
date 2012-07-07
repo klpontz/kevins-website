@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Yesteryear);
+
 html {
 
 }
@@ -31,34 +33,33 @@ footer {
 /* COLORS
 =================================================== */
 .lightest {
-  background-color: #EFEFEF;
+  background-color: #F2E5BD;
 }
 
 .lighter {
-  background-color: #FF530D;
+  background-color: #9FD7C7;
 }
 
 .light {
-  background-color: #BDD4DE;
+  background-color: #EE913F;
 }
 
 .dark {
-  background-color: #3F5765;
+  background-color: #7F8C1F;
 }
 
 .darker {
-  background-color: #2B3A42;
+  background-color: #195073;
 }
 
 /* BOXES
 =================================================== */
 .brick {
-  float:left;
-  border: 1px solid #eee;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.05);
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .mini {
@@ -119,11 +120,11 @@ footer {
           transition-property: width, height;
 }
 .masonry .masonry-brick {
-  -webkit-transition-property: left, right, top;
-     -moz-transition-property: left, right, top;
-      -ms-transition-property: left, right, top;
-       -o-transition-property: left, right, top;
-          transition-property: left, right, top;
+  -webkit-transition-property: top;
+     -moz-transition-property: top;
+      -ms-transition-property: top;
+       -o-transition-property: top;
+          transition-property: top;
 }
 
 /* BACK-TO-THE-TOP BUTTON
@@ -135,11 +136,12 @@ footer {
 }
 #back-top a {
   display: block;
+  font-family: 'Yesteryear', cursive;
+  font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #262626;
-  /* background color transition */
   -webkit-transition: 1s;
   -moz-transition: 1s;
   transition: 1s;
@@ -147,9 +149,10 @@ footer {
 #back-top a:hover {
   color: #BDD4DE;
 }
-/* arrow icon (span tag) */
+
 #back-top span {
-  width: 32px;
+  opacity: .6;
+  width: 41px;
   height: 32px;
   display: block;
   background: url(../img/arrow-up.png) no-repeat center center;

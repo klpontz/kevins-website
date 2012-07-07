@@ -26,7 +26,7 @@ var boxCount = 0;
 
 boxMaker.makeBoxes = function() {
   var boxes = [],
-      count = Math.random() * 7;
+      count = Math.random() * 3;
 	  
   for (var i=0; i < count; i++ ) {
 	boxCount++;
@@ -44,11 +44,11 @@ boxMaker.makeBoxes = function() {
     } else {
       box.className = 'brick' + ' ' + boxType[boxNumber] + ' ' + colors[colorNumber];
       box.appendChild( text );
+
       // add box DOM node to document fragment
       boxes.push( box );
 	}
   }
-  		
   return boxes;
 };
 
@@ -62,10 +62,11 @@ window.onload = function() {
   });
 
   $(window).scroll(function() {
-    // get an array of elements
+	// get an array of elements
     var boxes = boxMaker.makeBoxes();  
+
 	for (var i=0, len = boxes.length; i < len; i++) {
-    container.appendChild( boxes[i] );
+      container.appendChild( boxes[i] );
     }   
     wall.appended( boxes );
   });

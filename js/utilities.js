@@ -17,13 +17,15 @@
   /* Apply Highlight Dynamically
    * =======================================================
    * A function which waits for scrolling to stop. Checks
-   * for new bricks, and applys the "highlight" attribute
+   * for new bricks, and applies the "highlight" attribute
    * to them.
    */
-  
+   
    $(document).on("scrollstop",function() {
-     $(".brick").livequery('click', function () {
-       $(this).effect("highlight", {color:"#ffffff"}, 4000);
-     }); 
+	 $(".brick").click( function () {
+	   $(this).effect("highlight", {color:"#ffffff"}, 2000);
+     });
    });
-  
+   
+
+ 
