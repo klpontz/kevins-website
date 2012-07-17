@@ -434,7 +434,7 @@
       this.build( callback );
     },
 
-    // convienence method for working with Infinite Scroll
+    // convenience method for working with Infinite Scroll
     appended: function( items, isAnimatedFromBottom, callback ) {
       var instance = this,
           layoutAppendedItems = function() {

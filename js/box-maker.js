@@ -48,6 +48,13 @@ boxMaker.makeBoxes = function() {
       // add box DOM node to document fragment
       boxes.push( box );
 	}
+
+ 	$(box).click( function () {
+      var color = $(this).css("background-color");
+      $(this).animate({ backgroundColor: "#ffffff" }, 1000, function(){
+   	    $(this).animate({ backgroundColor: color }, 500);
+      });
+    });
   }
   return boxes;
 };
@@ -61,7 +68,7 @@ window.onload = function() {
     columnWidth: 94
   });
 
-  $(window).on("scrollstop",function() {
+  $(window).on("scroll",function() {
 	// get an array of elements
     var boxes = boxMaker.makeBoxes();  
 

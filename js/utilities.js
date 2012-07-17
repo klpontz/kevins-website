@@ -20,12 +20,19 @@
    * for new bricks, and applies the "highlight" attribute
    * to them.
    */
-   
+$(document).ready(function(){   
    $(document).on("scrollstop",function() {
-	 $(".brick").click( function () {
-	   $(this).effect("highlight", {color:"#ffffff"}, 2000);
-     });
+		 console.log("scrollstop")	   
+	 // $(".brick").click( function () {
+	 // 		 console.log("click");
+	 //   var color = $(this).css("background-color");
+	 //   	 console.log("variable");
+	 //   $(this).animate({ backgroundColor: "#ffffff" }, 1000, function(){
+	 //   	$(this).animate({ backgroundColor: color }, 500);
+	 //   });
+	 //     console.log("to white");  
+	 //   
+	 //  		 console.log("back to original");
+	 //      });
    });
-   
-
- 
+});
