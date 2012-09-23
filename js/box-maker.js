@@ -2,7 +2,7 @@
   * ======================================================= */
  // This is a utitlity script to add random content 
  // to masonry-ed layouts. Boxes will be made and added 
- // when the user scrolls down.
+ // when the page loads.
  //
  // Built off of code from David DeSandro
  // http://vanilla-masonry.desandro.com/ 
@@ -31,7 +31,7 @@ boxMaker.makeBoxes = function() {
   for (var i=0; i < count; i++ ) {
 	  boxCount++;
     var box = document.createElement('div'),
-        text = document.createTextNode( boxCount );
+        text = document.createTextNode( '' ); // Replace the quotes with boxcount to add the text to the boxes
     
 	  var colorNumber = Math.floor( Math.random() * colors.length);
 	  var boxNumber = Math.floor( Math.random() * boxType.length);
@@ -40,7 +40,10 @@ boxMaker.makeBoxes = function() {
     if (contentBoxCount == 0) {
 	    box.className = 'brick' + ' ' + 'contentBox' + ' ' + 'lightest';
 	    box.appendChild( text );
-	    boxes.push( box );
+
+	    // add box DOM node to document fragment
+      boxes.push( box );
+    
     } else {
       box.className = 'brick' + ' ' + boxType[boxNumber] + ' ' + colors[colorNumber];
       box.appendChild( text );

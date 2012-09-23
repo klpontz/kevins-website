@@ -14,8 +14,8 @@ body {
 
 #scrollOn {
   background-image: url(../img/extender.gif) repeat-y;
-  display:hidden;
-  height:100%;
+  display: hidden;
+  height: 100%;
 }
 
 #content {
@@ -24,9 +24,9 @@ body {
 }
 
 footer {
-  bottom:0%;
-  position:fixed;
-  width:100%;
+  bottom: 0%;
+  position: fixed;
+  width: 100%;
   background: #3F5765;
 }
 	
