@@ -26,21 +26,21 @@ var boxCount = 0;
 
 boxMaker.makeBoxes = function() {
   var boxes = [],
-      count = Math.random() * 3;
+      count = (101 * 7) + 15;
 	  
   for (var i=0; i < count; i++ ) {
-	boxCount++;
+	  boxCount++;
     var box = document.createElement('div'),
         text = document.createTextNode( boxCount );
     
-	var colorNumber = Math.floor(Math.random()*colors.length);
-	var boxNumber = Math.floor(Math.random()*boxType.length);
-	var contentBoxCount = boxCount%71;
+	  var colorNumber = Math.floor( Math.random() * colors.length);
+	  var boxNumber = Math.floor( Math.random() * boxType.length);
+	  var contentBoxCount = boxCount % 101;
 	
     if (contentBoxCount == 0) {
-	  box.className = 'brick' + ' ' + 'contentBox' + ' ' + 'lightest';
-	  box.appendChild( text );
-	  boxes.push( box );
+	    box.className = 'brick' + ' ' + 'contentBox' + ' ' + 'lightest';
+	    box.appendChild( text );
+	    boxes.push( box );
     } else {
       box.className = 'brick' + ' ' + boxType[boxNumber] + ' ' + colors[colorNumber];
       box.appendChild( text );
@@ -48,14 +48,25 @@ boxMaker.makeBoxes = function() {
       // add box DOM node to document fragment
       boxes.push( box );
 	}
-
- 	$(box).click( function () {
+    
+    // Apply background color animation to boxes
+ 	  $(box).click( function () {
       var color = $(this).css("background-color");
       $(this).animate({ backgroundColor: "#ffffff" }, 1000, function(){
    	    $(this).animate({ backgroundColor: color }, 500);
       });
     });
+	
+    $(".contentBox").click( function() {
+	    var top = $(this).css("top");
+	    var left = $(this).css("left");
+	    var position = $(this).css("position");
+	    var sp = ' ';
+		
+	    alert(top + sp + left + sp + position);
+    });
   }
+
   return boxes;
 };
 
@@ -67,14 +78,12 @@ window.onload = function() {
   var wall = new Masonry( container, {
     columnWidth: 94
   });
-
-  $(window).on("scroll",function() {
-	// get an array of elements
-    var boxes = boxMaker.makeBoxes();  
+  
+  var boxes = boxMaker.makeBoxes();  
 
 	for (var i=0, len = boxes.length; i < len; i++) {
-      container.appendChild( boxes[i] );
-    }   
-    wall.appended( boxes );
-  });
+    container.appendChild( boxes[i] );
+  }   
+  wall.appended( boxes );
+
 };

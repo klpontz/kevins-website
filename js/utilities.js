@@ -8,31 +8,25 @@
   * The site won't function otherwise.
   */
   
-  $(document).ready(function(){
-    var newHeight = $('body').outerHeight() + 1000;
-    $("#scrollOn").css("height",newHeight);
+  // $(document).ready(function(){
+  //  var newHeight = $('body').outerHeight() + 1000;
+  //  $("#scrollOn").css("height",newHeight);
   });
   
-  
-  /* Apply Highlight Dynamically
+  /*  Prepend Boxes
    * =======================================================
-   * A function which waits for scrolling to stop. Checks
-   * for new bricks, and applies the "highlight" attribute
-   * to them.
+   * Function should be placed inside of the function that 
+   * instatiate the wall of boxes. Also, need to add a button 
+   * or some way to call the function on the page.
    */
-$(document).ready(function(){   
-   $(document).on("scrollstop",function() {
-		 console.log("scrollstop")	   
-	 // $(".brick").click( function () {
-	 // 		 console.log("click");
-	 //   var color = $(this).css("background-color");
-	 //   	 console.log("variable");
-	 //   $(this).animate({ backgroundColor: "#ffffff" }, 1000, function(){
-	 //   	$(this).animate({ backgroundColor: color }, 500);
-	 //   });
-	 //     console.log("to white");  
-	 //   
-	 //  		 console.log("back to original");
-	 //      });
-   });
-});
+  
+  document.getElementById('prepend').onclick = function() {
+    // get an array of elements
+    var boxes = boxMaker.makeBoxes();
+
+   // prepend box to container
+    for (var i=0, len = boxes.length; i < len; i++) {
+      container.insertBefore( boxes[i], container.firstChild )
+      }
+    wall.reload();
+  };
